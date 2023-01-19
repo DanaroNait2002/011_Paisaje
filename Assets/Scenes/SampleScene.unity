@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 677065459}
   - component: {fileID: 677065458}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: "Pradera con Monta\xF1as"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 1561572509}
   - component: {fileID: 1561572508}
   m_Layer: 0
-  m_Name: Terrain (1)
+  m_Name: Picos Gemelos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
