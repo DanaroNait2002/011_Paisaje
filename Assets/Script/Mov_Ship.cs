@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Mov_Ship : MonoBehaviour
 {
+    //Activar al terminar la cinemática
+
+
+
     [Header("Speed")]
     //Movement speed
     [SerializeField]
