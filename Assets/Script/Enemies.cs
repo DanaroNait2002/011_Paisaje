@@ -24,7 +24,7 @@ public class Enemies : MonoBehaviour
 
     [Header("Customizable")]
     [SerializeField]
-    float speed = 5f;
+    float enemiesSpeed = 5f;
 
     void OnEnable()
     {
@@ -34,15 +34,18 @@ public class Enemies : MonoBehaviour
 
     void Update()
     {
+        //The GameObject look at the next Marker
+        transform.LookAt(route[currentMarker].transform);
+
         //The GameObject is always moving forward, and as it is looking to the next Marker, it moves in that direction
-        transform.position += transform.forward * Time.deltaTime * speed;
+        transform.position += transform.forward * enemiesSpeed * Time.deltaTime;
     }
 
     //When the GameObject collides with something
     private void OnTriggerEnter(Collider marker)
     {
         //It compares the tag of that something
-        //If it is a Marker
+        //If it is a "Marker"
         if (marker.CompareTag("Marker"))
         {
             //The next Marker is updated
@@ -54,9 +57,6 @@ public class Enemies : MonoBehaviour
                 //It becomes 0 again to start over
                 currentMarker = 0;
             }
-
-            //The GameObject look at the next Marker
-            transform.LookAt(route[currentMarker].transform);
         }
     }
 }

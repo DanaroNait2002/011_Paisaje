@@ -7,7 +7,7 @@ public class Mov_Ship : MonoBehaviour
     [Header("Speed")]
     //Movement speed
     [SerializeField]
-    float speed = 10.0f;
+    float speed = 5f;
     //Rotation X speed
     [SerializeField]
     float speedRotationVertical = 10f;
@@ -20,10 +20,10 @@ public class Mov_Ship : MonoBehaviour
     {
         float rotationX = Input.GetAxis("Vertical") * speedRotationVertical * Time.deltaTime;
         float rotationY = - Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
-        float rotationZ = Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
+        float rotationZ = - Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
 
         transform.Rotate(rotationX, rotationY, rotationZ, Space.Self);
 
-        transform.position += (transform.forward * Time.deltaTime * speed);
+        transform.position += (transform.forward * speed * Time.deltaTime);
     }
 }
