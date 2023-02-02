@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Mov_Ship : MonoBehaviour
 {
-    //Activar al terminar la cinemática
-
-
-
     [Header("Speed")]
     //Movement speed
     [SerializeField]
-    float speed = 0.0f;
+    float speed = 10.0f;
     //Rotation X speed
     [SerializeField]
     float speedRotationVertical = 10f;
