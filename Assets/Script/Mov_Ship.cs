@@ -19,7 +19,7 @@ public class Mov_Ship : MonoBehaviour
     void Update()
     {
         float rotationX = Input.GetAxis("Vertical") * speedRotationVertical * Time.deltaTime;
-        float rotationY = - Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
+        float rotationY = Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
         float rotationZ = - Input.GetAxis("Horizontal") * speedRotationHorizontal * Time.deltaTime;
 
         transform.Rotate(rotationX, rotationY, rotationZ, Space.Self);

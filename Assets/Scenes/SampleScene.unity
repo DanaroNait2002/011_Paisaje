@@ -1563,6 +1563,7 @@ GameObject:
   - component: {fileID: 1481214386}
   - component: {fileID: 1481214387}
   - component: {fileID: 1481214388}
+  - component: {fileID: 1481214389}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Player
@@ -1621,6 +1622,21 @@ MonoBehaviour:
   speed: 5
   speedRotationVertical: 10
   speedRotationHorizontal: 10
+--- !u!114 &1481214389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481214384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee14d0ae24f09d4aafc55d89e593c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 897917589152141585, guid: 0ee103db430336b4ea74186d99d424af, type: 3}
+  ship: {fileID: 1481214384}
+  bulletSpeed: 6
 --- !u!1 &1516135082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,7 +1654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1516135083
 Transform:
   m_ObjectHideFlags: 0
@@ -2134,7 +2150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1877733618
 Transform:
   m_ObjectHideFlags: 0

@@ -42,11 +42,11 @@ public class Enemies : MonoBehaviour
     }
 
     //When the GameObject collides with something
-    private void OnTriggerEnter(Collider marker)
+    private void OnTriggerEnter(Collider other)
     {
         //It compares the tag of that something
         //If it is a "Marker"
-        if (marker.CompareTag("Marker"))
+        if (other.CompareTag("Marker"))
         {
             //The next Marker is updated
             currentMarker++;
@@ -58,5 +58,11 @@ public class Enemies : MonoBehaviour
                 currentMarker = 0;
             }
         }
+
+        if (other.CompareTag("Bullet"))
+        {
+            gameObject.SetActive(false);
+        }
     }
+
 }
