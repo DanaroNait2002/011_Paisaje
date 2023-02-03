@@ -27,8 +27,10 @@ public class Shoots_Ship : MonoBehaviour
 
     void Update()
     {
+        //If the user clicks
         if (Input.GetMouseButtonDown(0))
         {
+            //Creates a "bullet"
             Instantiate(bullet, transform.localPosition, transform.localRotation);
         }
     }

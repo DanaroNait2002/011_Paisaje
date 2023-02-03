@@ -59,8 +59,11 @@ public class Enemies : MonoBehaviour
             }
         }
 
+        //It compares the tag of that something
+        //If it is a "Bullet"
         if (other.CompareTag("Bullet"))
         {
+            //Desactivate the GameObject
             gameObject.SetActive(false);
         }
     }

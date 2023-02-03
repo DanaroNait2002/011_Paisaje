@@ -138,17 +138,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 262d5a54b8e32bf40aed664c86b3a229,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 262d5a54b8e32bf40aed664c86b3a229,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 262d5a54b8e32bf40aed664c86b3a229,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 262d5a54b8e32bf40aed664c86b3a229,
         type: 3}
@@ -322,8 +322,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: -0, y: 1, z: 1e-45, w: 0}
-  m_LocalPosition: {x: 25.29, y: 31.46, z: 85}
+  m_LocalRotation: {x: -0, y: 0.9396927, z: -0.3420201, w: 0}
+  m_LocalPosition: {x: 50, y: 32, z: 88.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,8 +485,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.8, y: 1, z: 4.8}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!54 &352998982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1580,7 +1580,7 @@ Transform:
   m_GameObject: {fileID: 1481214384}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 25.29, y: 31.46, z: 75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1353860487}
@@ -1619,9 +1619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8b85e9737bc9742900c9fb937576ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  speedRotationVertical: 10
-  speedRotationHorizontal: 10
+  speed: 1
+  speedRotationVertical: 20
+  speedRotationHorizontal: 20
 --- !u!114 &1481214389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1636,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 897917589152141585, guid: 0ee103db430336b4ea74186d99d424af, type: 3}
   ship: {fileID: 1481214384}
-  bulletSpeed: 6
 --- !u!1 &1516135082
 GameObject:
   m_ObjectHideFlags: 0
