@@ -14,6 +14,9 @@ public class Enemies : MonoBehaviour
     - Usar transform.LookAt(ruta[siguientePunto].transform) para que la nave
         mire hacia ese punto                                                    
     - Tenemos que modificar la posición del objeto (transform.position)         
+
+    - ENEMIGOS
+        -   Detectar colisión y destruirse al detectarla
     */
 
     [Header("Markers")]
@@ -63,8 +66,8 @@ public class Enemies : MonoBehaviour
         //If it is a "Bullet"
         if (other.CompareTag("Bullet"))
         {
-            //Desactivate the GameObject
-            gameObject.SetActive(false);
+            //Initiates the cycle again
+            transform.position = route[0].transform.position;
         }
     }
 

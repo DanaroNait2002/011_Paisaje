@@ -5,18 +5,11 @@ using UnityEngine;
 public class Shoots_Ship : MonoBehaviour
 {
     /*
-    DOS SCRIPTS
+    OBJETIVOS
     - NAVE
         -  Cuando se pulsa ESPACIO se crea una bala
            - Prefab -> Modelo 3D 
              Proyectil
-
-    - PROYECTIL
-        -   Avanzar forward
-        -   Limite de tiempo
-
-    - ENEMIGOS
-        -   Detectar colisión y destruirse al detectarla
     */
 
     [Header("Prefabs")]
@@ -28,7 +21,7 @@ public class Shoots_Ship : MonoBehaviour
     void Update()
     {
         //If the user clicks
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             //Creates a "bullet"
             Instantiate(bullet, transform.localPosition, transform.localRotation);

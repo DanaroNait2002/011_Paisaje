@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Shoots_Bullets : MonoBehaviour
 {
+    /*
+    OBJETIVOS
+    - PROYECTIL
+        -   Avanzar forward
+        -   Limite de tiempo
+    */
+
     [Header("Customizable")]
     [SerializeField]
     float speed = 10f;
