@@ -31,6 +31,7 @@ public class Mov_Ship : MonoBehaviour
         {
             Debug.Log("No esta pulsando W o S o No esta pulsando A o D");
             //Quiero que la nave vuelva a la rotación inicial cuando no se este pulsando nada
+            //No entiendo porqué no puedo
             //transform.rotation = Quaternion.Euler(initialRotation);
         }
 
