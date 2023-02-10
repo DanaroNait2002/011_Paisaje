@@ -22,7 +22,7 @@ public class PowerUp_Creation : MonoBehaviour
     [SerializeField]
     float timeMax = 40f;
     [SerializeField]
-    float timeConstant;
+    float timeConstant = 40f;
     [SerializeField]
     float timer;
     [SerializeField]
@@ -35,7 +35,6 @@ public class PowerUp_Creation : MonoBehaviour
     void Start()
     {
         timer = Random.Range(timeMin, timeMax);
-        timeConstant = timer;
 
         currentPosition = Random.Range(0, positions.Length);
     }
