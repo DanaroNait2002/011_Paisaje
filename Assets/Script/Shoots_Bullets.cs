@@ -20,6 +20,7 @@ public class Shoots_Bullets : MonoBehaviour
     //When the script is activated the timer is set on 10
     void OnEnable()
     {
+        //timer being the lifespawn of the bullet
         timer = 10f;
     }
 

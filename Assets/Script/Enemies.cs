@@ -45,7 +45,7 @@ public class Enemies : MonoBehaviour
     }
 
     //When the GameObject collides with something
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         //It compares the tag of that something
         //If it is a "Marker"
