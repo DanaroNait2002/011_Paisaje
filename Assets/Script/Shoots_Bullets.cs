@@ -39,4 +39,9 @@ public class Shoots_Bullets : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    /*
+    Hizo un vector 3 direccionFuerza
+    La bala tiene un collider y un rigid
+    gameobject.GetComponent<Rigidbody>.AddForce(direccionFuerza, ForceMode.Impulse);
+    */
 }

@@ -1808,7 +1808,7 @@ MonoBehaviour:
   bullet: {fileID: 897917589152141585, guid: 0ee103db430336b4ea74186d99d424af, type: 3}
   ship: {fileID: 1481214384}
   cooldownConstant: 0
-  cooldown: 0.75
+  cooldown: 2
   cooldownPowerUp: 0.325
   timer: 0
   timerPowerUp: 20

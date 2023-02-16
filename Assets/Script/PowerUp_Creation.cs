@@ -51,4 +51,8 @@ public class PowerUp_Creation : MonoBehaviour
             currentPosition = Random.Range(0, positions.Length);
         }
     }
+    /*
+    El crea una función que se activa cuando el jugador toca el Power-Up
+    Y un booleano para que no hayan varios a la vez
+    */
 }

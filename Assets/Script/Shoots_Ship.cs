@@ -99,4 +99,10 @@ public class Shoots_Ship : MonoBehaviour
             cooldown = cooldownPowerUp;
         }
     }
+    /*
+    Tiempo entre disparos y tiempo que ha pasado
+    Una vez dispara ese tiempo se hace 0 lo hace dentro del if y el va sumando, yo restando
+
+    El Power up resta también, entonces al restar en dos partes se tarda la mitad con un coeficiente inicial y uno a la mitad, que se multiplica al coldown
+    */
 }
